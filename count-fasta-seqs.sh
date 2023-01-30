@@ -94,3 +94,20 @@ echo "$@"
 #
 # ADD YOUR CODE BELOW:
 
+#First, we want to add access to the two files.
+chmod +x example*.fasta
+
+#Now, we want to count the number of sequences in each file name and echo this information.
+
+
+#making a for loop to count number of sequences in input file and echo this info.
+
+for x in $@ 
+	do 
+	name=($(basename $x))
+	total=($(grep ">" $x | wc -l))
+	echo $total $name
+	grand_total=($(grep ">" $@ | wc -l))
+	done
+	echo $grand_total
+	
