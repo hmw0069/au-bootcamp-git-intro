@@ -97,9 +97,6 @@ echo "$@"
 #First, we want to add access to the two files.
 chmod +x example*.fasta
 
-#Now, we want to count the number of sequences in each file name and echo this information.
-
-
 #making a for loop to count number of sequences in input file and echo this info.
 
 for x in $@ 
