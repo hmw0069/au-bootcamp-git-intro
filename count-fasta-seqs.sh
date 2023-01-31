@@ -108,10 +108,4 @@ for x in $@
 	done
 	echo $grand_total
 	
-#CTracy comments: Good job! The script does what is intended. 
-#Just a small note that isn't an issue, but you calculate the grand total within the for loop so it will re-calculate as many times as the number of files provided.
-#Again this will still work fine, but for other scripts that are more computationally heavy you would want this line outside of the loop
-#if it is something that is needed only once globally. 
-#Additionally, think about how you could create a variable where you add the number of sequences in each file as they are looped through to a grand total. 
-#This is where you would use 'expr' within the loop to add to an existing value
-#Try to either incorporate this change or just think about how you might do that and reply below that you received these comments!
+#CTracy comments:
