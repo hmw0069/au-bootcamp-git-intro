@@ -108,4 +108,6 @@ for x in $@
 	done
 	echo $grand_total
 	
-#CTracy comments:
+#CTracy comments: This is very close! The output looks almost exactly like what he is looking for but when you run "sh run_tests.sh" they all fail.
+#Try to look closely at the observed output and see if you can tell what is causing the issue.
+$Hint: It isn't necessarily in the code you added below line 95
