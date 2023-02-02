@@ -63,7 +63,7 @@
 # files that were 'given to' this script. The variable "$@" will be very useful
 # for this. Let's take a look at what it gives us:
 
-echo "$@"
+#echo "$@"
 
 # How are you going to work with each file path?
 # HINT: for loop (remember "for do done"?)
@@ -94,8 +94,6 @@ echo "$@"
 #
 # ADD YOUR CODE BELOW:
 
-#First, we want to add access to the two files.
-chmod +x example*.fasta
 
 #making a for loop to count number of sequences in input file and echo this info.
 
@@ -110,4 +108,4 @@ for x in $@
 	
 #CTracy comments: This is very close! The output looks almost exactly like what he is looking for but when you run "sh run_tests.sh" they all fail.
 #Try to look closely at the observed output and see if you can tell what is causing the issue.
-$Hint: It isn't necessarily in the code you added below line 95
+#Hint: It isn't necessarily in the code you added below line 95
